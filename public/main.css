@@ -96,6 +96,7 @@ aside {
   padding: 10px;
   margin-bottom: 20px;
   background-color: #EFEFEF;
+  min-height: 180px;
 }
 
 .visitor-counter {
@@ -115,6 +116,16 @@ aside {
   text-align: center;
   font-weight: bold;
   text-decoration: underline;
+  margin-bottom: 1px;
+}
+
+.sidebar-subtitle {
+  color: black;
+  /* Navy blue */
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 1px;
   margin-bottom: 10px;
 }
 
@@ -164,6 +175,13 @@ main {
 
 .welcome-text p {
   margin-bottom: 15px;
+}
+
+.mulish-font-mm {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
 }
 
 .construction-bar {
