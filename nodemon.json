@@ -1,0 +1,7 @@
+{
+  "verbose": true,
+  "watch": [
+    "public/"
+  ],
+  "ext": "js,json,html,css"
+}

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mickey Malotte | Software Developer</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Mickey Malotte</h1>
+            <p class="tagline">Full Stack Developer & Aspiring Cloud Architect</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello! I'm Mickey, a passionate full stack developer with expertise in building robust web
+                        applications and cloud solutions.</p>
+                    <p>I specialize in creating efficient, scalable software that solves real-world problems. My journey
+                        in cloud architecture has equipped me with the skills to design resilient systems that grow with
+                        your needs.</p>
+                </div>
+                <div class="profile-image">
+                    <!-- Replace with your actual image -->
+                    <img src="mickey-avatar.jpg" alt="Mickey Malotte">
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>HTML5 / CSS3 / JavaScript</li>
+                        <li>React / Vue.js</li>
+                        <li>Responsive Design</li>
+                        <li>UI/UX Principles</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Node.js / Express</li>
+                        <li>Python / Django</li>
+                        <li>RESTful APIs</li>
+                        <li>Database Design</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Cloud & DevOps</h3>
+                    <ul>
+                        <li>AWS / Azure</li>
+                        <li>Docker / Kubernetes</li>
+                        <li>CI/CD Pipelines</li>
+                        <li>Infrastructure as Code</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Project Name</h3>
+                    <p>A brief description of the project and your role in it. Highlight key technologies used and
+                        outcomes achieved.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn">View Project</a>
+                        <a href="#" class="btn">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Project Name</h3>
+                    <p>A brief description of the project and your role in it. Highlight key technologies used and
+                        outcomes achieved.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn">View Project</a>
+                        <a href="#" class="btn">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Project Name</h3>
+                    <p>A brief description of the project and your role in it. Highlight key technologies used and
+                        outcomes achieved.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn">View Project</a>
+                        <a href="#" class="btn">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="container">
+            <h2>Get In Touch</h2>
+            <p>Interested in working together? Feel free to reach out!</p>
+            <a href="mailto:mikejrm@gmail.com" class="btn btn-primary">Contact Me</a>
+
+            <div class="social-links">
+                <a href="https://github.com/MickeyJ" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/michael-malotte" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.instagram.com/mckyjr/" target="_blank" rel="noopener noreferrer"
+                    aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="current-year"></span> Mickey Malotte. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Update copyright year
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Check for dark mode preference
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.body.classList.add('dark-mode');
+        }
+
+        // Listen for changes in color scheme preference
+        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+            if (event.matches) {
+                document.body.classList.add('dark-mode');
+            } else {
+                document.body.classList.remove('dark-mode');
+            }
+        });
+    </script>
+</body>
+
+</html>
